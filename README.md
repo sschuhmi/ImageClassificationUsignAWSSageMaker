@@ -30,6 +30,8 @@ The best hyperparameters were the following: {'batch_size': 32, 'lr': '0.0007073
 
 Screnshots on the completed training jobs as well as a detail screenshot of a specific training job and the obtained best hyperparameters are provided as 'TrainingJobs_Screenshot.jpg' and 'TrainingJob-Detail_Screenshot.jpg'.
 
+Also for the Hyperparameter tuning jobs, a screenshot is provided as 'HyperparameterTuningJobs_Screenshot.jpg'.
+
 ## Debugging and Profiling
 To perform model debugging and profiling in SageMaker, I configured the training job with SageMaker Debugger and Profiler in the training notebook. 
 I enabled built-in rules to monitor training performance and resource utilization, including checks for dataloader issues, CPU and I/O bottlenecks, GPU utilization, batch size efficiency, and step outliers. 
