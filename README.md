@@ -47,7 +47,7 @@ Major results/insights by profiling/debugging our model:
 - If there had been an error, a likely example would be an out-of-memory issue. In the profiler output, this would typically appear as failing training steps, crashes during batch processing, or resource utilization spiking near the hardware limit. This issue could be fixed by reducing the batch size, using a smaller model, resizing input images, or switching to a larger instance type.
 - Another possible anomaly could be low GPU utilization caused by a CPU or dataloader bottleneck. In the profiler report, this would appear as the LowGPUUtilization, CPUBottleneck, or Dataloader rules being triggered. These issues could by increasing the number of dataloader workers, improving data preprocessing/loading, increasing batch size, or using a more suitable instance type.
 
-The profiler html/pdf is attached to the submission as 'profiler-report.html'.
+The profiler report as html and pdf is attached to the submission as 'profiler-report.html' and 'profiler-report.pdf'.
 
 
 ## Model Deployment
