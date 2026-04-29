@@ -53,7 +53,7 @@ The profiler html/pdf is attached to the submission as 'profiler-report.html'.
 The trained model was deployed to a SageMaker inference endpoint and queried using a sample dog image in JPEG format. The image was read as bytes and sent to the endpoint with the content type set to image/jpeg. The endpoint returned a probability vector across all dog-breed classes. I then selected the class with the highest probability using argmax and mapped the predicted class index to the corresponding class name.
 
 Three different images of dogs from different classes were used to test the SageMaker inference endpoint - they are provided as 'DuckToller.jpg', 'Poodle.jpg', and 'Schaeferhund.jpg' within this project.
-A screenshot of the deployed active endpoint in Sagemaker is also provided as 'Endpoint_Screenshot.jpg'.
+A screenshot of the deployed active endpoint in Sagemaker is also provided as 'Endpoint_Screenshot.jpg', as well as the utilization of CPU, GPU, and memory in 'Endpoint-Utilization_Screenshot.jpg'.
 
 ## Standout Suggestions
 
