@@ -7,6 +7,13 @@ In this project, we use AWS Sagemaker to train a pretrained model that can perfo
 2. Download the starter files.
 3. Download/Make the dataset available. 
 
+### Jupyter Notebooks and Python scripts
+The main jupyter notebook is train_and_deploy.ipynb.
+Furthermore, the logics of training, finetuning, deploying, ... are included in the following Python scripts:
+- hpo.py (for hyperparameter optimization)
+- inf.py (for inference)
+- train_model.py (for finetuning)
+
 ## Dataset
 The provided dataset is the dogbreed classification dataset which can be found in the classroom.
 The project is designed to be dataset independent so if there is a dataset that is more interesting or relevant to your work, you can easily switch it to a dataset of your choice.
@@ -21,7 +28,7 @@ For hyperparameter tuning, I focused on parameters that strongly affect optimiza
 
 The best hyperparameters were the following: {'batch_size': 32, 'lr': '0.0007073488418203175'}
 
-Screnshots on the completed training jobs as well as a detail screenshot of a specific training job are provided as 'TrainingJobs_Screenshot.jpg' and 'TrainingJob-Detail_Screenshot.jpg'.
+Screnshots on the completed training jobs as well as a detail screenshot of a specific training job and the obtained best hyperparameters are provided as 'TrainingJobs_Screenshot.jpg' and 'TrainingJob-Detail_Screenshot.jpg'.
 
 ## Debugging and Profiling
 To perform model debugging and profiling in SageMaker, I configured the training job with SageMaker Debugger and Profiler in the training notebook. 
